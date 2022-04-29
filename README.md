@@ -1,5 +1,4 @@
-https://planatech.atlassian.net/plugins/servlet/ac/io.tempo.jira/tempo-app#!/reports
-
+- Open time report
 - Click on logged time
     - will open a modal, leave these options:  
     filter by: ''  
