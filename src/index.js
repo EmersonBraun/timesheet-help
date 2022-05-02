@@ -9,7 +9,6 @@ import { fileURLToPath } from 'url';
 import { DataProcessorFacade } from './dataProcessorFacade.js';
 
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -49,7 +48,9 @@ const exportToExcel = (data) => {
     const validFiles = await getFileList()
     for await(const file of validFiles) {
         try {
+            console.log(file)
             const jsonData = convertExcelToJson(file)
+            // console.log(jsonData)
             const dataProcessorFacade = new DataProcessorFacade(jsonData)
             const data = await dataProcessorFacade.getDataFromText()
             exportToExcel(data)
