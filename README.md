@@ -11,3 +11,4 @@
 ```
 npm run start
 ```
+ - The formatted file will be in the 'out' folder with format timesheet-<year>-<month>.xlxs
